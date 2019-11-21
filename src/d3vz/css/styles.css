@@ -1,0 +1,31 @@
+/*styles.css
+*/
+
+
+body{
+    font-family: Arial;
+}
+
+svg rect{
+    fill: lightskyblue;
+}
+
+svg text{
+    fill: yellow;
+    font: 12px sans-serif;
+    text-anchor: end;
+}
+
+.arc text {
+    font: 12px arial;
+    text-anchor: middle;;
+}
+
+.arc path {
+    stroke: #fff;
+}
+
+.title {
+    fill: green;
+    font-weight: italic;
+}

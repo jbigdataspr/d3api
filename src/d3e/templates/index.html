@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>D3 Data Visualization</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+        <style>
+            .dropbtn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <script src="js/dtree.js"></script> -->
+
+        <h2>D3 work with Django</h2>
+        <p>Move the mouse over the button to see D3 Examples.</p>
+
+        <div class="dropdown">
+
+            <button class="dropbtn">D3 Examples</button>
+            <div class="dropdown-content">
+                <a href="raindrop">Rain Drop</a>
+                <a href="piechart">Pie Cahrt</a>
+                <a href="roundedrect">Rounded Rectagles</a>
+                <a href="debts">Euro Debt Crisis</a>
+                <a href="bar">Bar Charts</a>
+                <a href="tmp">Run Test</a>
+            </div>
+            
+        </div>
+         
+        
+    </body>
+</html>

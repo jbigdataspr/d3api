@@ -1,0 +1,48 @@
+[
+    {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+    },
+    {
+        "name": "Jane",
+        "age": 20,
+        "city": "San Francisco"
+    },
+    {
+        "name": "Rose",
+        "age": 33,
+        "city": "New Jersey"
+    }, {
+        "name": "Jennifer",
+        "age": 22,
+        "city": "San Jose"
+    },
+    {
+        "name": "Ben",
+        "age": 37,
+        "city": "New Haven"
+    }, {
+        "name": "Steve",
+        "age": 70,
+        "city": "San Deigo"
+    },
+    {
+        "name": "James",
+        "age": 40,
+        "city": "New Orential"
+    }, {
+        "name": "Kate",
+        "age": 27,
+        "city": "Austin"
+    },
+    {
+        "name": "Lee",
+        "age": 50,
+        "city": "Boston"
+    }, {
+        "name": "Ty",
+        "age": 20,
+        "city": "San Francisco"
+    }
+]
