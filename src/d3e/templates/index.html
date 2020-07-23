@@ -16,6 +16,38 @@
                 border: none;
             }
 
+			.dropbtn-purple {
+                background-color: purple;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+			.dropbtn-orange {
+                background-color: orange;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+			.dropbtn-blue {
+                background-color: blue;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+			.dropbtn-cadetblue {
+                background-color: cadetblue;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
             .dropdown {
                 position: relative;
                 display: inline-block;
@@ -24,7 +56,7 @@
             .dropdown-content {
                 display: none;
                 position: absolute;
-                background-color: #f1f1f1;
+                background-color: #eee4b9;
                 min-width: 160px;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 z-index: 1;
@@ -38,7 +70,7 @@
             }
 
             .dropdown-content a:hover {
-                background-color: #ddd;
+                background-color: burlywood;
             }
 
             .dropdown:hover .dropdown-content {
@@ -57,19 +89,57 @@
         <p>Move the mouse over the button to see D3 Examples.</p>
 
         <div class="dropdown">
-
             <button class="dropbtn">D3 Examples</button>
             <div class="dropdown-content">
-                <a href="raindrop">Rain Drop</a>
-                <a href="piechart">Pie Cahrt</a>
-                <a href="roundedrect">Rounded Rectagles</a>
-                <a href="debts">Euro Debt Crisis</a>
-                <a href="bar">Bar Charts</a>
+                <a href="pie">Pie Chat</a>
+				<a href="bar">Bar Charts</a>
+				<a href="bar2">Bar2 Charts</a>
+				<a href="bar3">Bar3 Charts</a>
                 <a href="tmp">Run Test</a>
             </div>
-            
+		</div>
+		
+		<div class="dropdown">
+            <button class="dropbtn-purple">Advanced D3</button>
+            <div class="dropdown-content">
+                <a href="raindrop">Rain Drop</a>
+				<a href="roundedrect">Rounded Rectagles</a>
+				<a href="religions">Religone Top 20</a>
+				<a href="debts">Euro Debt Crisis</a>
+				<a href="d3dbar">D3Bar Charts</a>
+            </div>
+		</div>
+		
+		<div class="dropdown">
+            <button class="dropbtn-orange">D3 with tooltip</button>
+            <div class="dropdown-content">
+				<a href="ttip">Simple tooltips</a>
+				<a href="howard">Howard V-19</a>
+				<a href="md">Maryland V-19</a>
+				<a href="ttip2">Tooltips BarChart</a>
+				<a href="heatmap">Heatmap Chart</a>
+				<a href="globtemp">GlobalTemperature</a>
+            </div>
+		</div>
+		
+		<div class="dropdown">
+            <button class="dropbtn-blue">Live Data D3</button>
+            <div class="dropdown-content">
+				<a href="raindrop">Rain Drop</a>
+				<a href="realine">Realtime Line</a>
+            </div>
         </div>
-         
+		
+		<div class="dropdown">
+            <button class="dropbtn-cadetblue">Contour Samples</button>
+            <div class="dropdown-content">
+				<a href="contour1">Simple Contour1</a>
+				<a href="contour2">Simple Contour2</a>
+				<a href="contour3">Simple Contour3</a>
+				<a href="contour4">Simple Contour4</a>
+				
+            </div>
+		</div>
         
     </body>
 </html>

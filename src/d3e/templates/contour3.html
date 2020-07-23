@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Plotly.js -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	  
+<body>
+	<a href="/d3/">Home</a>	
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+<script>
+		  
+var size = 75, x = new Array(size), y = new Array(size), z = new Array(size), i, j;
+
+for(var i = 0; i < size; i++) {
+    x[i] = y[i] = -2 * Math.PI + 4 * Math.PI * i / size;
+    z[i] = new Array(size);
+}
+
+for(var i = 0; i < size; i++) {
+    for(j = 0; j < size; j++) {
+        var r2 = x[i]*x[i] + y[j]*y[j];
+        z[i][j] = Math.sin(x[i]) * Math.cos(y[j]) * Math.sin(r2) / Math.log(r2+1);
+    }
+}
+
+var data = [{
+  z: [[10, 10.625, 12.5, 15.625, 20],
+       [5.625, 6.25, 8.125, 11.25, 15.625],
+       [2.5, 3.125, 5., 8.125, 12.5],
+       [0.625, 1.25, 3.125, 6.25, 10.625],
+       [0, 0.625, 2.5, 5.625, 10]],
+  x: [-9, -6, -5 , -3, -1],
+  y: [0, 1, 4, 5, 7],
+  type: 'contour'
+}];
+
+var layout = {
+  title: 'Setting the X and Y Coordinates in a Contour Plot'
+};
+
+Plotly.newPlot('myDiv', data, layout, {showSendToCloud: true});
+
+</script>
+</body>  	  
+</html>
